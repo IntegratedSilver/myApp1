@@ -10,19 +10,14 @@ import {
   Alert,
   StatusBar,
   Platform,
+  Dimensions,
 } from "react-native";
 
 export default function Index() {
-  const handlePress = () => console.log("pressed from a function");
-
+  console.log(Dimensions.get('screen'))
   return (
-    <View style={[styles.container]}>
-      <Button
-        color={"orange"}
-        title="Click me!"
-        onPress={() => Alert.prompt("My Title", "My Message", text => console.log(text))}
-      />
-      <StatusBar barStyle={'light-content'} backgroundColor={'black'}/>
+    <View style={{backgroundColor:'cornflowerblue', width:"50%", height:70}}>
+ 
     </View>
   );
 }
